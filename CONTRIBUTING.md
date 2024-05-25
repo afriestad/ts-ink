@@ -83,14 +83,6 @@ with the latest version of inklecate.
 ⚠️ Running `test:javascript` and its variants won't transpile the files, so be
 sure to run `build` first.
 
-#### Porting tests from the reference implementation
-
-_To be added._
-
-#### Writing new specs
-
-_To be added._
-
 ## Releasing a new version
 
 The repository is set up to automatically publish a new version to [npm](https://www.npmjs.com/package/inkjs) whenever [a new release is created through Github](https://github.com/y-lohse/inkjs/releases). The corresponding Github workflow can be found [here](https://github.com/y-lohse/inkjs/blob/master/.github/workflows/npm-publish.yml). The secret npm token is stored via the Github UI — if it needs to be updated, get in touch with @y-lohse 😀!

@@ -236,7 +236,8 @@ export class InkParser extends StringParser {
 
   public readonly OnStringParserError = (
     message: string,
-    index: number,
+    // Included for compat reasons but not used
+    _index: number,
     lineIndex: number = 0,
     isWarning: boolean = false
   ): void => {
@@ -2735,8 +2736,6 @@ export class InkParser extends StringParser {
       this.InnerExpression,
     ];
 
-    let wasTagActiveAtStartOfScope = this.tagActive;
-
     // Adapted from "OneOf" structuring rule except that in
     // order for the rule to succeed, it has to maximally
     // cover the entire string within the { }. Used to
@@ -3124,7 +3123,7 @@ export class InkParser extends StringParser {
   };
 
   public readonly GenerateStatementLevelRules = () => {
-    const levels = Object.values(StatementLevel);
+    const levels = Object.values(StatementLevel) as StatementLevel[];
 
     this._statementRulesAtLevel = "f"
       .repeat(levels.length)
