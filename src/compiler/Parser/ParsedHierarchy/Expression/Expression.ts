@@ -55,7 +55,7 @@ export abstract class Expression extends ParsedObject {
     return "Expression";
   }
 
-  public Equals(obj: ParsedObject): boolean {
+  public Equals(_obj: ParsedObject): boolean {
     return false;
   }
 

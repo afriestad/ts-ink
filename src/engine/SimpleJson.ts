@@ -48,8 +48,10 @@ export namespace SimpleJson {
         this.Assert(this.currentCollection !== null);
         this.Assert(this.currentPropertyName !== null);
 
-        let propertyName = this._propertyNameStack.pop();
-        this.currentCollection![propertyName!] = newObject;
+        // TODO(afriestad): fix the typing here
+        const propertyName = this._propertyNameStack.pop();
+        const currentCollection = this.currentCollection as Record<string, any>;
+        if (propertyName && currentCollection) currentCollection[propertyName] = newObject;
         this._collectionStack.push(newObject);
       } else if (this.state === SimpleJson.Writer.State.Array) {
         // This object is created as the child of an array.
@@ -78,8 +80,7 @@ export namespace SimpleJson {
     // Write a property name / value pair to the current object.
     public WriteProperty(
       name: any,
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      innerOrContent: ((w: Writer) => void) | string | boolean | null
+      _innerOrContent: ((w: Writer) => void) | string | boolean | null
     ) {
       this.WritePropertyStart(name);
       if (arguments[1] instanceof Function) {
@@ -170,8 +171,10 @@ export namespace SimpleJson {
         this.Assert(this.currentCollection !== null);
         this.Assert(this.currentPropertyName !== null);
 
-        let propertyName = this._propertyNameStack.pop();
-        this.currentCollection![propertyName!] = newObject;
+        // TODO(afriestad): fix typing here
+        const propertyName = this._propertyNameStack.pop() as unknown as number;
+        const currentCollection = this.currentCollection as any[] | null;
+        if (propertyName && currentCollection) currentCollection[propertyName] = newObject;
         this._collectionStack.push(newObject);
       } else if (this.state === SimpleJson.Writer.State.Array) {
         // This array is created as the child of another array.
@@ -201,8 +204,8 @@ export namespace SimpleJson {
     // context.
     public Write(
       value: number | string | boolean | null,
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      escape: boolean = true
+      // Unused but included for compat reasons
+      _escape: boolean = true
     ) {
       if (value === null) {
         console.error("Warning: trying to write a null value");
@@ -284,8 +287,7 @@ export namespace SimpleJson {
       this._currentString = null;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    public WriteStringInner(str: string | null, escape: boolean = true) {
+    public WriteStringInner(str: string | null, _escape: boolean = true) {
       this.Assert(this.state === SimpleJson.Writer.State.String);
 
       if (str === null) {

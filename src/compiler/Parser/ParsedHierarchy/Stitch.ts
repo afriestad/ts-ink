@@ -25,6 +25,6 @@ export class Stitch extends FlowBase {
   public toString = (): string => {
     return `${
       this.parent !== null ? this.parent + " > " : ""
-    }${super.toString()}`;
+    }${this.toString()}`;
   };
 }

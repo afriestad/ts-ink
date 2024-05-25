@@ -203,7 +203,7 @@ export class FunctionCall extends Expression {
     } else if (NativeFunctionCall.CallExistsWithName(this.name)) {
       const nativeCall = NativeFunctionCall.CallWithName(this.name);
       if (nativeCall.numberOfParameters !== this.args.length) {
-        let msg = `${name} should take ${nativeCall.numberOfParameters} parameter`;
+        let msg = `${this.name} should take ${nativeCall.numberOfParameters} parameter`;
         if (nativeCall.numberOfParameters > 1) {
           msg += "s";
         }
@@ -302,7 +302,7 @@ export class FunctionCall extends Expression {
 
       if (runtimeVarRef.pathForCount !== null) {
         this.Error(
-          `Should be '${name}'(-> '${this._variableReferenceToCount.name}). Usage without the '->' only makes sense for variable targets.`
+          `Should be '${this.name}'(-> '${this._variableReferenceToCount.name}). Usage without the '->' only makes sense for variable targets.`
         );
       }
     }

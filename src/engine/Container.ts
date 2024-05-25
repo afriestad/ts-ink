@@ -65,7 +65,8 @@ export class Container extends InkObject implements INamedContent {
     }
   }
   get countFlags(): number {
-    let flags: Container.CountFlags = 0;
+    let flags = Container.CountFlags.None;
+
     if (this.visitsShouldBeCounted) flags |= Container.CountFlags.Visits;
     if (this.turnIndexShouldBeCounted) flags |= Container.CountFlags.Turns;
     if (this.countingAtStartOnly) flags |= Container.CountFlags.CountStartOnly;
@@ -329,6 +330,7 @@ export class Container extends InkObject implements INamedContent {
 
 export namespace Container {
   export enum CountFlags {
+    None = 0,
     Visits = 1,
     Turns = 2,
     CountStartOnly = 4,

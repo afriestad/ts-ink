@@ -58,7 +58,8 @@ export class ListDefinition {
   }
   public TryGetValueForItem(
     item: InkListItem,
-    /* out */ intVal: number
+    // Included for compat but unused
+    _intVal: number
   ): TryGetResult<number> {
     if (!item.itemName) return { result: 0, exists: false };
     let value = this._itemNameToValues.get(item.itemName);

@@ -93,30 +93,6 @@ export abstract class ParsedObject {
     return result;
   }
 
-  /*
-  get descriptionOfScope(): string {
-    const locationNames: string[] = [];
-
-    let ancestor: ParsedObject | null = this;
-    while (ancestor) {
-      var ancestorFlow = ancestor as FlowBase;
-      if (ancestorFlow && ancestorFlow.name != null) {
-        locationNames.push(`'${ancestorFlow.name}'`);
-      }
-      ancestor = ancestor.parent;
-    }
-
-    let scopeSB = '';
-    if (locationNames.length > 0) {
-      const locationsListStr = locationNames.join(', ');
-      scopeSB += `${locationsListStr} and`;
-    }
-
-    scopeSB += 'at top scope';
-
-    return scopeSB;
-  }
-*/
 
   // Return the object so that method can be chained easily
   public readonly AddContent = <T extends ParsedObject, V extends T | T[]>(
