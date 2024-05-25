@@ -1,5 +1,5 @@
-import { InkListItem, SerializedInkListItem } from "./InkList";
-import { TryGetResult } from "./TryGetResult";
+import { InkListItem, SerializedInkListItem } from "engine/InkList";
+import { TryGetResult } from "engine/TryGetResult";
 
 export class ListDefinition {
   public _name: string;

@@ -1,15 +1,15 @@
-import { PushPopType } from "./PushPop";
-import { Path } from "./Path";
-import { Story } from "./Story";
-import { JsonSerialisation } from "./JsonSerialisation";
-import { ListValue } from "./Value";
-import { StringBuilder } from "./StringBuilder";
-import { Pointer } from "./Pointer";
-import { InkObject } from "./Object";
-import { Debug } from "./Debug";
-import { tryGetValueFromMap } from "./TryGetResult";
-import { throwNullException } from "./NullException";
-import { SimpleJson } from "./SimpleJson";
+import { PushPopType } from "engine/PushPop";
+import { Path } from "engine/Path";
+import { Story } from "engine/Story";
+import { JsonSerialisation } from "engine/JsonSerialisation";
+import { ListValue } from "engine/Value";
+import { StringBuilder } from "engine/StringBuilder";
+import { Pointer } from "engine/Pointer";
+import { InkObject } from "engine/Object";
+import { Debug } from "engine/Debug";
+import { tryGetValueFromMap } from "engine/TryGetResult";
+import { throwNullException } from "engine/NullException";
+import { SimpleJson } from "engine/SimpleJson";
 
 export class CallStack {
   get elements() {

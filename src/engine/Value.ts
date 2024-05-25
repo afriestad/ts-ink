@@ -1,10 +1,10 @@
-import { InkObject } from "./Object";
-import { Path } from "./Path";
-import { InkList, InkListItem } from "./InkList";
-import { StoryException } from "./StoryException";
-import { asOrNull, asOrThrows } from "./TypeAssertion";
-import { tryParseInt, tryParseFloat } from "./TryGetResult";
-import { throwNullException } from "./NullException";
+import { InkObject } from "engine/Object";
+import { Path } from "engine/Path";
+import { InkList, InkListItem } from "engine/InkList";
+import { StoryException } from "engine/StoryException";
+import { asOrNull, asOrThrows } from "engine/TypeAssertion";
+import { tryParseInt, tryParseFloat } from "engine/TryGetResult";
+import { throwNullException } from "engine/NullException";
 
 export abstract class AbstractValue extends InkObject {
   public abstract get valueType(): ValueType;

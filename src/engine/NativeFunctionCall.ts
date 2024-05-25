@@ -1,11 +1,11 @@
-import { Value, ValueType, IntValue, ListValue, BoolValue } from "./Value";
-import { StoryException } from "./StoryException";
-import { Void } from "./Void";
-import { Path } from "./Path";
-import { InkList, InkListItem } from "./InkList";
-import { InkObject } from "./Object";
-import { asOrNull, asOrThrows, asBooleanOrThrows } from "./TypeAssertion";
-import { throwNullException } from "./NullException";
+import { Value, ValueType, IntValue, ListValue, BoolValue } from "engine/Value";
+import { StoryException } from "engine/StoryException";
+import { Void } from "engine/Void";
+import { Path } from "engine/Path";
+import { InkList, InkListItem } from "engine/InkList";
+import { InkObject } from "engine/Object";
+import { asOrNull, asOrThrows, asBooleanOrThrows } from "engine/TypeAssertion";
+import { throwNullException } from "engine/NullException";
 
 type BinaryOp<T> = (left: T, right: T) => any;
 type UnaryOp<T> = (val: T) => any;

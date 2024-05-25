@@ -1,6 +1,6 @@
-import { Path } from "./Path";
-import { Container } from "./Container";
-import { InkObject } from "./Object";
+import { Path } from "engine/Path";
+import { Container } from "engine/Container";
+import { InkObject } from "engine/Object";
 
 export class Pointer {
   public container: Container | null = null;

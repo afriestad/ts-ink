@@ -1,10 +1,10 @@
-import { CallStack } from "./CallStack";
-import { Choice } from "./Choice";
-import { JsonSerialisation } from "./JsonSerialisation";
-import { InkObject } from "./Object";
-import { SimpleJson } from "./SimpleJson";
-import { Story } from "./Story";
-import { throwNullException } from "./NullException";
+import { CallStack } from "engine/CallStack";
+import { Choice } from "engine/Choice";
+import { JsonSerialisation } from "engine/JsonSerialisation";
+import { InkObject } from "engine/Object";
+import { SimpleJson } from "engine/SimpleJson";
+import { Story } from "engine/Story";
+import { throwNullException } from "engine/NullException";
 
 export class Flow {
   public name: string;

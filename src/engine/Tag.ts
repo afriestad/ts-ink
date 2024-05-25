@@ -1,4 +1,4 @@
-import { InkObject } from "./Object";
+import { InkObject } from "engine/Object";
 
 // New version of tags is dynamic - it constructs the tags
 // at runtime based on BeginTag and EndTag control commands.

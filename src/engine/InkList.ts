@@ -1,7 +1,7 @@
-import { throwNullException } from "./NullException";
-import { StringBuilder } from "./StringBuilder";
-import { ListDefinition } from "./ListDefinition";
-import { Story } from "./Story";
+import { throwNullException } from "engine/NullException";
+import { StringBuilder } from "engine/StringBuilder";
+import { ListDefinition } from "engine/ListDefinition";
+import { Story } from "engine/Story";
 
 export class InkListItem implements IInkListItem {
   // InkListItem is a struct

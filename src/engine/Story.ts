@@ -1,12 +1,12 @@
-import { Container } from "./Container";
-import { InkObject } from "./Object";
-import { JsonSerialisation } from "./JsonSerialisation";
-import { StoryState } from "./StoryState";
-import { ControlCommand } from "./ControlCommand";
-import { PushPopType } from "./PushPop";
-import { ChoicePoint } from "./ChoicePoint";
-import { Choice } from "./Choice";
-import { Divert } from "./Divert";
+import { Container } from "engine/Container";
+import { InkObject } from "engine/Object";
+import { JsonSerialisation } from "engine/JsonSerialisation";
+import { StoryState } from "engine/StoryState";
+import { ControlCommand } from "engine/ControlCommand";
+import { PushPopType } from "engine/PushPop";
+import { ChoicePoint } from "engine/ChoicePoint";
+import { Choice } from "engine/Choice";
+import { Divert } from "engine/Divert";
 import {
   Value,
   StringValue,
@@ -14,28 +14,28 @@ import {
   DivertTargetValue,
   VariablePointerValue,
   ListValue,
-} from "./Value";
-import { Path } from "./Path";
-import { Void } from "./Void";
-import { Tag } from "./Tag";
-import { VariableAssignment } from "./VariableAssignment";
-import { VariableReference } from "./VariableReference";
-import { NativeFunctionCall } from "./NativeFunctionCall";
-import { StoryException } from "./StoryException";
-import { PRNG } from "./PRNG";
-import { StringBuilder } from "./StringBuilder";
-import { ListDefinitionsOrigin } from "./ListDefinitionsOrigin";
-import { ListDefinition } from "./ListDefinition";
-import { Stopwatch } from "./StopWatch";
-import { Pointer } from "./Pointer";
-import { InkList, InkListItem, KeyValuePair } from "./InkList";
-import { asOrNull, asOrThrows } from "./TypeAssertion";
-import { DebugMetadata } from "./DebugMetadata";
-import { throwNullException } from "./NullException";
-import { SimpleJson } from "./SimpleJson";
-import { ErrorHandler, ErrorType } from "./Error";
+} from "engine/Value";
+import { Path } from "engine/Path";
+import { Void } from "engine/Void";
+import { Tag } from "engine/Tag";
+import { VariableAssignment } from "engine/VariableAssignment";
+import { VariableReference } from "engine/VariableReference";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { StoryException } from "engine/StoryException";
+import { PRNG } from "engine/PRNG";
+import { StringBuilder } from "engine/StringBuilder";
+import { ListDefinitionsOrigin } from "engine/ListDefinitionsOrigin";
+import { ListDefinition } from "engine/ListDefinition";
+import { Stopwatch } from "engine/StopWatch";
+import { Pointer } from "engine/Pointer";
+import { InkList, InkListItem, KeyValuePair } from "engine/InkList";
+import { asOrNull, asOrThrows } from "engine/TypeAssertion";
+import { DebugMetadata } from "engine/DebugMetadata";
+import { throwNullException } from "engine/NullException";
+import { SimpleJson } from "engine/SimpleJson";
+import { ErrorHandler, ErrorType } from "engine/Error";
 
-export { InkList } from "./InkList";
+export { InkList } from "engine/InkList";
 
 if (!Number.isInteger) {
   Number.isInteger = function isInteger(nVal: any) {

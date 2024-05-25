@@ -1,4 +1,4 @@
-import { InkObject } from "./Object";
+import { InkObject } from "engine/Object";
 
 export class VariableAssignment extends InkObject {
   public readonly variableName: string | null;

@@ -1,13 +1,13 @@
-import { StringValue } from "./Value";
-import { throwNullException } from "./NullException";
-import { StringBuilder } from "./StringBuilder";
-import { INamedContent } from "./INamedContent";
-import { InkObject } from "./Object";
-import { SearchResult } from "./SearchResult";
-import { Path } from "./Path";
-import { Debug } from "./Debug";
-import { tryGetValueFromMap } from "./TryGetResult";
-import { asINamedContentOrNull, asOrNull, asOrThrows } from "./TypeAssertion";
+import { StringValue } from "engine/Value";
+import { throwNullException } from "engine/NullException";
+import { StringBuilder } from "engine/StringBuilder";
+import { INamedContent } from "engine/INamedContent";
+import { InkObject } from "engine/Object";
+import { SearchResult } from "engine/SearchResult";
+import { Path } from "engine/Path";
+import { Debug } from "engine/Debug";
+import { tryGetValueFromMap } from "engine/TryGetResult";
+import { asINamedContentOrNull, asOrNull, asOrThrows } from "engine/TypeAssertion";
 
 export class Container extends InkObject implements INamedContent {
   public name: string | null = null;

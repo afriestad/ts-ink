@@ -6,20 +6,20 @@ import {
   IntValue,
   FloatValue,
   BoolValue,
-} from "./Value";
-import { VariableAssignment } from "./VariableAssignment";
-import { InkObject } from "./Object";
-import { ListDefinitionsOrigin } from "./ListDefinitionsOrigin";
-import { StoryException } from "./StoryException";
-import { JsonSerialisation } from "./JsonSerialisation";
-import { asOrThrows, asOrNull, isEquatable } from "./TypeAssertion";
-import { tryGetValueFromMap } from "./TryGetResult";
-import { throwNullException } from "./NullException";
-import { CallStack } from "./CallStack";
-import { StatePatch } from "./StatePatch";
-import { SimpleJson } from "./SimpleJson";
-import { InkList } from "./Story";
-import { Path } from "./Path";
+} from "engine/Value";
+import { VariableAssignment } from "engine/VariableAssignment";
+import { InkObject } from "engine/Object";
+import { ListDefinitionsOrigin } from "engine/ListDefinitionsOrigin";
+import { StoryException } from "engine/StoryException";
+import { JsonSerialisation } from "engine/JsonSerialisation";
+import { asOrThrows, asOrNull, isEquatable } from "engine/TypeAssertion";
+import { tryGetValueFromMap } from "engine/TryGetResult";
+import { throwNullException } from "engine/NullException";
+import { CallStack } from "engine/CallStack";
+import { StatePatch } from "engine/StatePatch";
+import { SimpleJson } from "engine/SimpleJson";
+import { InkList } from "engine/Story";
+import { Path } from "engine/Path";
 
 // Fake class wrapper around VariableState to have correct typing
 // when using the Proxy syntax in typescript

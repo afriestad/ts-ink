@@ -1,10 +1,10 @@
-import { Path } from "./Path";
-import { Container } from "./Container";
-import { Debug } from "./Debug";
-import { asOrNull, asINamedContentOrNull } from "./TypeAssertion";
-import { throwNullException } from "./NullException";
-import { SearchResult } from "./SearchResult";
-import { DebugMetadata } from "./DebugMetadata";
+import { Path } from "engine/Path";
+import { Container } from "engine/Container";
+import { Debug } from "engine/Debug";
+import { asOrNull, asINamedContentOrNull } from "engine/TypeAssertion";
+import { throwNullException } from "engine/NullException";
+import { SearchResult } from "engine/SearchResult";
+import { DebugMetadata } from "engine/DebugMetadata";
 
 export class InkObject {
   public parent: InkObject | null = null;

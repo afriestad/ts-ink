@@ -1,10 +1,10 @@
-import { Path } from "./Path";
-import { PushPopType } from "./PushPop";
-import { StringBuilder } from "./StringBuilder";
-import { InkObject } from "./Object";
-import { Pointer } from "./Pointer";
-import { Container } from "./Container";
-import { throwNullException } from "./NullException";
+import { Path } from "engine/Path";
+import { PushPopType } from "engine/PushPop";
+import { StringBuilder } from "engine/StringBuilder";
+import { InkObject } from "engine/Object";
+import { Pointer } from "engine/Pointer";
+import { Container } from "engine/Container";
+import { throwNullException } from "engine/NullException";
 
 export class Divert extends InkObject {
   get targetPath() {

@@ -1,8 +1,8 @@
-import { InkListItem } from "./InkList";
-import { ListValue } from "./Value";
-import { ListDefinition } from "./ListDefinition";
-import { TryGetResult } from "./TryGetResult";
-import { throwNullException } from "./NullException";
+import { InkListItem } from "engine/InkList";
+import { ListValue } from "engine/Value";
+import { ListDefinition } from "engine/ListDefinition";
+import { TryGetResult } from "engine/TryGetResult";
+import { throwNullException } from "engine/NullException";
 
 export class ListDefinitionsOrigin {
   protected _lists: Map<string, ListDefinition>;

@@ -1,4 +1,4 @@
-import { INamedContent } from "./INamedContent";
+import { INamedContent } from "engine/INamedContent";
 
 export function asOrNull<T>(
   obj: any,

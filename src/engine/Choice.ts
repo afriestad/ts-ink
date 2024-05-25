@@ -1,7 +1,7 @@
-import { Path } from "./Path";
-import { CallStack } from "./CallStack";
-import { throwNullException } from "./NullException";
-import { InkObject } from "./Object";
+import { Path } from "engine/Path";
+import { CallStack } from "engine/CallStack";
+import { throwNullException } from "engine/NullException";
+import { InkObject } from "engine/Object";
 
 export class Choice extends InkObject {
   public text: string = "";

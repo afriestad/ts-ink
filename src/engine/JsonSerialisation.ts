@@ -1,4 +1,4 @@
-import { Container } from "./Container";
+import { Container } from "engine/Container";
 import {
   Value,
   IntValue,
@@ -8,26 +8,26 @@ import {
   VariablePointerValue,
   ListValue,
   BoolValue,
-} from "./Value";
-import { Glue } from "./Glue";
-import { ControlCommand } from "./ControlCommand";
-import { PushPopType } from "./PushPop";
-import { Divert } from "./Divert";
-import { ChoicePoint } from "./ChoicePoint";
-import { VariableReference } from "./VariableReference";
-import { VariableAssignment } from "./VariableAssignment";
-import { NativeFunctionCall } from "./NativeFunctionCall";
-import { Void } from "./Void";
-import { Tag } from "./Tag";
-import { Path } from "./Path";
-import { Choice } from "./Choice";
-import { ListDefinition } from "./ListDefinition";
-import { ListDefinitionsOrigin } from "./ListDefinitionsOrigin";
-import { InkListItem, InkList } from "./InkList";
-import { InkObject } from "./Object";
-import { asOrNull } from "./TypeAssertion";
-import { throwNullException } from "./NullException";
-import { SimpleJson } from "./SimpleJson";
+} from "engine/Value";
+import { Glue } from "engine/Glue";
+import { ControlCommand } from "engine/ControlCommand";
+import { PushPopType } from "engine/PushPop";
+import { Divert } from "engine/Divert";
+import { ChoicePoint } from "engine/ChoicePoint";
+import { VariableReference } from "engine/VariableReference";
+import { VariableAssignment } from "engine/VariableAssignment";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { Void } from "engine/Void";
+import { Tag } from "engine/Tag";
+import { Path } from "engine/Path";
+import { Choice } from "engine/Choice";
+import { ListDefinition } from "engine/ListDefinition";
+import { ListDefinitionsOrigin } from "engine/ListDefinitionsOrigin";
+import { InkListItem, InkList } from "engine/InkList";
+import { InkObject } from "engine/Object";
+import { asOrNull } from "engine/TypeAssertion";
+import { throwNullException } from "engine/NullException";
+import { SimpleJson } from "engine/SimpleJson";
 
 export class JsonSerialisation {
   public static JArrayToRuntimeObjList(
