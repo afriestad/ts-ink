@@ -1,15 +1,15 @@
-import { ContentList } from "../ContentList";
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../../engine/ControlCommand";
-import { Divert as RuntimeDivert } from "../../../../engine/Divert";
-import { IntValue } from "../../../../engine/Value";
-import { NativeFunctionCall } from "../../../../engine/NativeFunctionCall";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
-import { SequenceDivertToResolve } from "./SequenceDivertToResolve";
-import { SequenceType } from "./SequenceType";
-import { Story } from "../Story";
-import { Weave } from "../Weave";
+import { ContentList } from "compiler/Parser/ParsedHierarchy/ContentList";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { IntValue } from "engine/Value";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { SequenceDivertToResolve } from "compiler/Parser/ParsedHierarchy/Sequence/SequenceDivertToResolve";
+import { SequenceType } from "compiler/Parser/ParsedHierarchy/Sequence/SequenceType";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { Weave } from "compiler/Parser/ParsedHierarchy/Weave";
 
 export class Sequence extends ParsedObject {
   private _sequenceDivertsToResolve: SequenceDivertToResolve[] = [];

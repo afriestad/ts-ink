@@ -1,4 +1,4 @@
-import { IFileHandler } from "../IFileHandler";
+import { IFileHandler } from "compiler/IFileHandler";
 
 // This class replaces upstream's DefaultFileHandler. It doesn't perform any
 // resolution and warns the user about providing a proper file handler when

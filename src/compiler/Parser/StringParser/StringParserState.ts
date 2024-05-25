@@ -1,4 +1,4 @@
-import { StringParserElement } from "./StringParserElement";
+import { StringParserElement } from "compiler/Parser/StringParser/StringParserElement";
 
 export class StringParserState {
   private _stack: StringParserElement[] = [];

@@ -1,5 +1,5 @@
-import { CharacterSet } from "./CharacterSet";
-import { StringParser } from "./StringParser/StringParser";
+import { CharacterSet } from "compiler/Parser/CharacterSet";
+import { StringParser } from "compiler/Parser/StringParser/StringParser";
 
 /// <summary>
 /// Pre-pass before main ink parser runs. It actually performs two main tasks:

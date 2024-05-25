@@ -1,11 +1,11 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { INamedContent } from "../../../../engine/INamedContent";
-import { IWeavePoint } from "../IWeavePoint";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
-import { Story } from "../Story";
-import { SymbolType } from "../SymbolType";
-import { Identifier } from "../Identifier";
+import { Container as RuntimeContainer } from "engine/Container";
+import { INamedContent } from "engine/INamedContent";
+import { IWeavePoint } from "compiler/Parser/ParsedHierarchy/IWeavePoint";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { SymbolType } from "compiler/Parser/ParsedHierarchy/SymbolType";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class Gather extends ParsedObject implements INamedContent, IWeavePoint {
   get name(): string | null {

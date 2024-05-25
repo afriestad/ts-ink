@@ -1,19 +1,19 @@
-﻿import { Container as RuntimeContainer } from "../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../engine/ControlCommand";
-import { Divert } from "./Divert/Divert";
-import { Divert as RuntimeDivert } from "../../../engine/Divert";
-import { DivertTarget } from "./Divert/DivertTarget";
-import { Expression } from "./Expression/Expression";
-import { InkList as RuntimeInkList } from "../../../engine/InkList";
-import { ListValue } from "../../../engine/Value";
-import { NativeFunctionCall } from "../../../engine/NativeFunctionCall";
-import { NumberExpression } from "./Expression/NumberExpression";
-import { Path } from "./Path";
-import { Story } from "./Story";
-import { StringValue } from "../../../engine/Value";
-import { VariableReference } from "./Variable/VariableReference";
-import { Identifier } from "./Identifier";
-import { asOrNull } from "../../../engine/TypeAssertion";
+﻿import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Divert } from "compiler/Parser/ParsedHierarchy/Divert/Divert";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { DivertTarget } from "compiler/Parser/ParsedHierarchy/Divert/DivertTarget";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { InkList as RuntimeInkList } from "engine/InkList";
+import { ListValue } from "engine/Value";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { NumberExpression } from "compiler/Parser/ParsedHierarchy/Expression/NumberExpression";
+import { Path } from "compiler/Parser/ParsedHierarchy/Path";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { StringValue } from "engine/Value";
+import { VariableReference } from "compiler/Parser/ParsedHierarchy/Variable/VariableReference";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class FunctionCall extends Expression {
   public static readonly IsBuiltIn = (name: string): boolean => {

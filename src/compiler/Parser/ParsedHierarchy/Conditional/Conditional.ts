@@ -1,10 +1,10 @@
-import { ConditionalSingleBranch } from "./ConditionalSingleBranch";
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../../engine/ControlCommand";
-import { Expression } from "../Expression/Expression";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
-import { Story } from "../Story";
+import { ConditionalSingleBranch } from "compiler/Parser/ParsedHierarchy/Conditional/ConditionalSingleBranch";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
 
 export class Conditional extends ParsedObject {
   private _reJoinTarget: RuntimeControlCommand | null = null;

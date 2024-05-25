@@ -1,4 +1,4 @@
-﻿import { ParsedObject } from "./Object";
+﻿import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
 
 export class AuthorWarning extends ParsedObject {
   constructor(public readonly warningMessage: string) {

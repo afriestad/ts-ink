@@ -1,14 +1,14 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ContentList } from "../ContentList";
-import { Expression } from "./Expression";
-import { FlowBase } from "../Flow/FlowBase";
-import { NativeFunctionCall } from "../../../../engine/NativeFunctionCall";
-import { IntValue } from "../../../../engine/Value";
-import { Story } from "../Story";
-import { VariableAssignment as RuntimeVariableAssignment } from "../../../../engine/VariableAssignment";
-import { VariableReference as RuntimeVariableReference } from "../../../../engine/VariableReference";
-import { Weave } from "../Weave";
-import { Identifier } from "../Identifier";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ContentList } from "compiler/Parser/ParsedHierarchy/ContentList";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { IntValue } from "engine/Value";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { VariableAssignment as RuntimeVariableAssignment } from "engine/VariableAssignment";
+import { VariableReference as RuntimeVariableReference } from "engine/VariableReference";
+import { Weave } from "compiler/Parser/ParsedHierarchy/Weave";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class IncDecExpression extends Expression {
   private _runtimeAssignment: RuntimeVariableAssignment | null = null;

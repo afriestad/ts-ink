@@ -1,10 +1,10 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "../Expression/Expression";
-import { InkList as RuntimeInkList } from "../../../../engine/InkList";
-import { InkListItem as RuntimeInkListItem } from "../../../../engine/InkList";
-import { ListElementDefinition } from "./ListElementDefinition";
-import { ListValue } from "../../../../engine/Value";
-import { Identifier } from "../Identifier";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { InkList as RuntimeInkList } from "engine/InkList";
+import { InkListItem as RuntimeInkListItem } from "engine/InkList";
+import { ListElementDefinition } from "compiler/Parser/ParsedHierarchy/List/ListElementDefinition";
+import { ListValue } from "engine/Value";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class List extends Expression {
   constructor(public readonly itemIdentifierList: Identifier[]) {

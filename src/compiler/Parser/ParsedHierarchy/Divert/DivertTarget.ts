@@ -1,19 +1,19 @@
-﻿import { BinaryExpression } from "../Expression/BinaryExpression";
-import { Choice } from "../Choice";
-import { Conditional } from "../Conditional/Conditional";
-import { ConditionalSingleBranch } from "../Conditional/ConditionalSingleBranch";
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ParsedObject } from "../Object";
-import { Divert } from "./Divert";
-import { Divert as RuntimeDivert } from "../../../../engine/Divert";
-import { DivertTargetValue } from "../../../../engine/Value";
-import { Expression } from "../Expression/Expression";
-import { FlowBase } from "../Flow/FlowBase";
-import { FunctionCall } from "../FunctionCall";
-import { MultipleConditionExpression } from "../Expression/MultipleConditionExpression";
-import { Story } from "../Story";
-import { VariableReference } from "../Variable/VariableReference";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+﻿import { BinaryExpression } from "compiler/Parser/ParsedHierarchy/Expression/BinaryExpression";
+import { Choice } from "compiler/Parser/ParsedHierarchy/Choice";
+import { Conditional } from "compiler/Parser/ParsedHierarchy/Conditional/Conditional";
+import { ConditionalSingleBranch } from "compiler/Parser/ParsedHierarchy/Conditional/ConditionalSingleBranch";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Divert } from "compiler/Parser/ParsedHierarchy/Divert/Divert";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { DivertTargetValue } from "engine/Value";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { FunctionCall } from "compiler/Parser/ParsedHierarchy/FunctionCall";
+import { MultipleConditionExpression } from "compiler/Parser/ParsedHierarchy/Expression/MultipleConditionExpression";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { VariableReference } from "compiler/Parser/ParsedHierarchy/Variable/VariableReference";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class DivertTarget extends Expression {
   private _runtimeDivert: RuntimeDivert | null = null;

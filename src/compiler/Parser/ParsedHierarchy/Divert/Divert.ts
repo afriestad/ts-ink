@@ -1,20 +1,20 @@
-import { Argument } from "../Argument";
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../../engine/ControlCommand";
-import { Divert as RuntimeDivert } from "../../../../engine/Divert";
-import { DivertTarget } from "./DivertTarget";
-import { Expression } from "../Expression/Expression";
-import { FlowBase } from "../Flow/FlowBase";
-import { FunctionCall } from "../FunctionCall";
-import { ParsedObject } from "../Object";
-import { Path } from "../Path";
-import { Path as RuntimePath } from "../../../../engine/Path";
-import { PushPopType } from "../../../../engine/PushPop";
-import { Story } from "../Story";
-import { VariablePointerValue } from "../../../../engine/Value";
-import { VariableReference } from "../Variable/VariableReference";
-import { ClosestFlowBase } from "../Flow/ClosestFlowBase";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+import { Argument } from "compiler/Parser/ParsedHierarchy/Argument";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { DivertTarget } from "compiler/Parser/ParsedHierarchy/Divert/DivertTarget";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { FunctionCall } from "compiler/Parser/ParsedHierarchy/FunctionCall";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Path } from "compiler/Parser/ParsedHierarchy/Path";
+import { Path as RuntimePath } from "engine/Path";
+import { PushPopType } from "engine/PushPop";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { VariablePointerValue } from "engine/Value";
+import { VariableReference } from "compiler/Parser/ParsedHierarchy/Variable/VariableReference";
+import { ClosestFlowBase } from "compiler/Parser/ParsedHierarchy/Flow/ClosestFlowBase";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class Divert extends ParsedObject {
   public readonly args: Expression[] = [];

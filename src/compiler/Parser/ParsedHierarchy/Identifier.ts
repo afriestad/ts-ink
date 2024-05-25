@@ -1,4 +1,4 @@
-import { DebugMetadata } from "../../../engine/DebugMetadata";
+import { DebugMetadata } from "engine/DebugMetadata";
 
 export class Identifier {
   public name: string;

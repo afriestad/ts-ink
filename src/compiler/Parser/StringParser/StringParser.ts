@@ -1,7 +1,7 @@
-import { CharacterSet } from "../CharacterSet";
-import { ParsedObject } from "../ParsedHierarchy/Object";
-import { StringParserState } from "./StringParserState";
-import { StringParserElement } from "./StringParserElement";
+import { CharacterSet } from "compiler/Parser/CharacterSet";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { StringParserState } from "compiler/Parser/StringParser/StringParserState";
+import { StringParserElement } from "compiler/Parser/StringParser/StringParserElement";
 
 export const ParseSuccess = Symbol("ParseSuccessStruct");
 

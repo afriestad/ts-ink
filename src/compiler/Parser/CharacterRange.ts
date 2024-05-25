@@ -1,4 +1,4 @@
-import { CharacterSet } from "./CharacterSet";
+import { CharacterSet } from "compiler/Parser/CharacterSet";
 
 /// <summary>
 /// A class representing a character range. Allows for lazy-loading a corresponding <see cref="CharacterSet">character set</see>.

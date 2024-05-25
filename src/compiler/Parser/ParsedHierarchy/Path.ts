@@ -1,9 +1,9 @@
-import { asOrNull, filterUndef } from "../../../engine/TypeAssertion";
-import { FlowBase } from "./Flow/FlowBase";
-import { FlowLevel } from "./Flow/FlowLevel";
-import { Identifier } from "./Identifier";
-import { ParsedObject } from "./Object";
-import { Weave } from "./Weave";
+import { asOrNull, filterUndef } from "engine/TypeAssertion";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { FlowLevel } from "compiler/Parser/ParsedHierarchy/Flow/FlowLevel";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Weave } from "compiler/Parser/ParsedHierarchy/Weave";
 
 export class Path {
   private _baseTargetLevel: FlowLevel | null;

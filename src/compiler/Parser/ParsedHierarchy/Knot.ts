@@ -1,9 +1,9 @@
-import { Argument } from "./Argument";
-import { FlowBase } from "./Flow/FlowBase";
-import { FlowLevel } from "./Flow/FlowLevel";
-import { Identifier } from "./Identifier";
-import { ParsedObject } from "./Object";
-import { Story } from "./Story";
+import { Argument } from "compiler/Parser/ParsedHierarchy/Argument";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { FlowLevel } from "compiler/Parser/ParsedHierarchy/Flow/FlowLevel";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
 
 export class Knot extends FlowBase {
   get flowLevel(): FlowLevel {

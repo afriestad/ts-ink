@@ -1,7 +1,7 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../../engine/ControlCommand";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
 
 export abstract class Expression extends ParsedObject {
   public abstract GenerateIntoContainer: (container: RuntimeContainer) => void;

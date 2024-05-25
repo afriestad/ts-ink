@@ -1,10 +1,10 @@
-import { Container as RuntimeContainer } from "../../../engine/Container";
-import { DebugMetadata } from "../../../engine/DebugMetadata";
-import { FindQueryFunc } from "./FindQueryFunc";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
-import { Path as RuntimePath } from "../../../engine/Path";
-import { Story } from "./Story";
-import { asOrNull } from "../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { DebugMetadata } from "engine/DebugMetadata";
+import { FindQueryFunc } from "compiler/Parser/ParsedHierarchy/FindQueryFunc";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Path as RuntimePath } from "engine/Path";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { asOrNull } from "engine/TypeAssertion";
 
 export abstract class ParsedObject {
   public abstract readonly GenerateRuntimeObject: () => RuntimeObject | null;

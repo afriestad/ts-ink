@@ -1,5 +1,5 @@
-import { ErrorHandler } from "../engine/Error";
-import { IFileHandler } from "./IFileHandler";
+import { ErrorHandler } from "engine/Error";
+import { IFileHandler } from "compiler/IFileHandler";
 
 export class CompilerOptions {
   constructor(

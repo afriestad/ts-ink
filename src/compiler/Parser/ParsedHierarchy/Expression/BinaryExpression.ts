@@ -1,9 +1,9 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "./Expression";
-import { NativeFunctionCall } from "../../../../engine/NativeFunctionCall";
-import { Story } from "../Story";
-import { UnaryExpression } from "./UnaryExpression";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { UnaryExpression } from "compiler/Parser/ParsedHierarchy/Expression/UnaryExpression";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class BinaryExpression extends Expression {
   public readonly leftExpression: Expression;

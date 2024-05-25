@@ -1,16 +1,16 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "../Expression/Expression";
-import { FlowBase } from "../Flow/FlowBase";
-import { ClosestFlowBase } from "../Flow/ClosestFlowBase";
-import { ListDefinition } from "../List/ListDefinition";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
-import { Story } from "../Story";
-import { SymbolType } from "../SymbolType";
-import { VariableAssignment as RuntimeVariableAssignment } from "../../../../engine/VariableAssignment";
-import { VariableReference } from "./VariableReference";
-import { Identifier } from "../Identifier";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { ClosestFlowBase } from "compiler/Parser/ParsedHierarchy/Flow/ClosestFlowBase";
+import { ListDefinition } from "compiler/Parser/ParsedHierarchy/List/ListDefinition";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { SymbolType } from "compiler/Parser/ParsedHierarchy/SymbolType";
+import { VariableAssignment as RuntimeVariableAssignment } from "engine/VariableAssignment";
+import { VariableReference } from "compiler/Parser/ParsedHierarchy/Variable/VariableReference";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class VariableAssignment extends ParsedObject {
   private _runtimeAssignment: RuntimeVariableAssignment | null = null;

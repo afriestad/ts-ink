@@ -1,8 +1,8 @@
-import { Argument } from "./Argument";
-import { FlowBase } from "./Flow/FlowBase";
-import { FlowLevel } from "./Flow/FlowLevel";
-import { Identifier } from "./Identifier";
-import { ParsedObject } from "./Object";
+import { Argument } from "compiler/Parser/ParsedHierarchy/Argument";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { FlowLevel } from "compiler/Parser/ParsedHierarchy/Flow/FlowLevel";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
 
 export class Stitch extends FlowBase {
   get flowLevel(): FlowLevel {

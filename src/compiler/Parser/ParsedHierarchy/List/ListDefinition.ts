@@ -1,13 +1,13 @@
-import { InkList as RuntimeInkList } from "../../../../engine/InkList";
-import { InkListItem as RuntimeInkListItem } from "../../../../engine/InkList";
-import { ListDefinition as RuntimeListDefinition } from "../../../../engine/ListDefinition";
-import { ListElementDefinition } from "./ListElementDefinition";
-import { ListValue } from "../../../../engine/Value";
-import { ParsedObject } from "../Object";
-import { Story } from "../Story";
-import { SymbolType } from "../SymbolType";
-import { VariableAssignment } from "../Variable/VariableAssignment";
-import { Identifier } from "../Identifier";
+import { InkList as RuntimeInkList } from "engine/InkList";
+import { InkListItem as RuntimeInkListItem } from "engine/InkList";
+import { ListDefinition as RuntimeListDefinition } from "engine/ListDefinition";
+import { ListElementDefinition } from "compiler/Parser/ParsedHierarchy/List/ListElementDefinition";
+import { ListValue } from "engine/Value";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { SymbolType } from "compiler/Parser/ParsedHierarchy/SymbolType";
+import { VariableAssignment } from "compiler/Parser/ParsedHierarchy/Variable/VariableAssignment";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class ListDefinition extends ParsedObject {
   public identifier: Identifier | null = null;

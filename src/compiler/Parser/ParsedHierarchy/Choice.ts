@@ -1,19 +1,19 @@
-import { ChoicePoint } from "../../../engine/ChoicePoint";
-import { Container as RuntimeContainer } from "../../../engine/Container";
-import { ContentList } from "./ContentList";
-import { ControlCommand as RuntimeControlCommand } from "../../../engine/ControlCommand";
-import { Divert as RuntimeDivert } from "../../../engine/Divert";
-import { DivertTargetValue } from "../../../engine/Value";
-import { INamedContent } from "../../../engine/INamedContent";
-import { IWeavePoint } from "./IWeavePoint";
-import { ParsedObject } from "./Object";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
-import { Path as RuntimePath } from "../../../engine/Path";
-import { Story } from "./Story";
-import { SymbolType } from "./SymbolType";
-import { VariableAssignment as RuntimeVariableAssignment } from "../../../engine/VariableAssignment";
-import { Expression } from "./Expression/Expression";
-import { Identifier } from "./Identifier";
+import { ChoicePoint } from "engine/ChoicePoint";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ContentList } from "compiler/Parser/ParsedHierarchy/ContentList";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { DivertTargetValue } from "engine/Value";
+import { INamedContent } from "engine/INamedContent";
+import { IWeavePoint } from "compiler/Parser/ParsedHierarchy/IWeavePoint";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Path as RuntimePath } from "engine/Path";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { SymbolType } from "compiler/Parser/ParsedHierarchy/SymbolType";
+import { VariableAssignment as RuntimeVariableAssignment } from "engine/VariableAssignment";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class Choice extends ParsedObject implements IWeavePoint, INamedContent {
   private _condition: Expression | null = null;

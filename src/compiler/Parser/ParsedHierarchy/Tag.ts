@@ -1,6 +1,6 @@
-import { ParsedObject } from "./Object";
-import { ControlCommand } from "../../../engine/ControlCommand";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { ControlCommand } from "engine/ControlCommand";
+import { InkObject as RuntimeObject } from "engine/Object";
 
 export class Tag extends ParsedObject {
   public isStart: boolean;

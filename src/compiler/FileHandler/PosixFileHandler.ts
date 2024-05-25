@@ -1,4 +1,4 @@
-import { IFileHandler } from "../IFileHandler";
+import { IFileHandler } from "compiler/IFileHandler";
 import * as path from "path";
 import * as fs from "fs";
 

@@ -1,9 +1,9 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../../engine/ControlCommand";
-import { Expression } from "./Expression";
-import { ParsedObject } from "../Object";
-import { Text } from "../Text";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Text } from "compiler/Parser/ParsedHierarchy/Text";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class StringExpression extends Expression {
   get isSingleString() {

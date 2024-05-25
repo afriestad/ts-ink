@@ -1,5 +1,5 @@
-import { Argument } from "./ParsedHierarchy/Argument";
-import { Identifier } from "./ParsedHierarchy/Identifier";
+import { Argument } from "compiler/Parser/ParsedHierarchy/Argument";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class FlowDecl {
   constructor(

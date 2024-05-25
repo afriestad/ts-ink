@@ -1,4 +1,4 @@
-import { IFileHandler } from "../IFileHandler";
+import { IFileHandler } from "compiler/IFileHandler";
 
 export class JsonFileHandler implements IFileHandler {
   constructor(public readonly fileHierarchy: Record<string, string>) {}

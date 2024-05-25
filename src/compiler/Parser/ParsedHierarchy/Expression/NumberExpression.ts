@@ -1,8 +1,8 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "./Expression";
-import { BoolValue, FloatValue, IntValue } from "../../../../engine/Value";
-import { asOrNull } from "../../../../engine/TypeAssertion";
-import { ParsedObject } from "../Object";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { BoolValue, FloatValue, IntValue } from "engine/Value";
+import { asOrNull } from "engine/TypeAssertion";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
 
 // This class is named Number in the C# codebase
 // but this conflict with the built-in Number class

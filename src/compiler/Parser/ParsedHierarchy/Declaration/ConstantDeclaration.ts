@@ -1,9 +1,9 @@
-import { Expression } from "../Expression/Expression";
-import { ParsedObject } from "../Object";
-import { InkObject as RuntimeObject } from "../../../../engine/Object";
-import { Story } from "../Story";
-import { SymbolType } from "../SymbolType";
-import { Identifier } from "../Identifier";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { SymbolType } from "compiler/Parser/ParsedHierarchy/SymbolType";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class ConstantDeclaration extends ParsedObject {
   get constantName(): string | undefined {

@@ -1,14 +1,14 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { ContentList } from "../ContentList";
-import { Expression } from "../Expression/Expression";
-import { FlowBase } from "../Flow/FlowBase";
-import { ParsedObject } from "../Object";
-import { Path } from "../Path";
-import { Story } from "../Story";
-import { VariableReference as RuntimeVariableReference } from "../../../../engine/VariableReference";
-import { Weave } from "../Weave";
-import { Identifier } from "../Identifier";
-import { asOrNull, filterUndef } from "../../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ContentList } from "compiler/Parser/ParsedHierarchy/ContentList";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { FlowBase } from "compiler/Parser/ParsedHierarchy/Flow/FlowBase";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Path } from "compiler/Parser/ParsedHierarchy/Path";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { VariableReference as RuntimeVariableReference } from "engine/VariableReference";
+import { Weave } from "compiler/Parser/ParsedHierarchy/Weave";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
+import { asOrNull, filterUndef } from "engine/TypeAssertion";
 
 export class VariableReference extends Expression {
   private _runtimeVarRef: RuntimeVariableReference | null = null;

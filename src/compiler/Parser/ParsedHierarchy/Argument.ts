@@ -1,4 +1,4 @@
-import { Identifier } from "./Identifier";
+import { Identifier } from "compiler/Parser/ParsedHierarchy/Identifier";
 
 export class Argument {
   constructor(

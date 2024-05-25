@@ -1,6 +1,6 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "./Expression";
-import { NativeFunctionCall } from "../../../../engine/NativeFunctionCall";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
 
 export class MultipleConditionExpression extends Expression {
   get subExpressions(): Expression[] {

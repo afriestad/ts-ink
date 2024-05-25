@@ -1,18 +1,18 @@
-import { CompilerOptions } from "./CompilerOptions";
-import { DebugSourceRange } from "./DebugSourceRange";
-import { ErrorType } from "./Parser/ErrorType";
-import { InkParser } from "./Parser/InkParser";
-import { Story } from "../engine/Story";
-import { Story as ParsedStory } from "./Parser/ParsedHierarchy/Story";
-import { DebugMetadata } from "../engine/DebugMetadata";
-import { StringValue } from "../engine/Value";
-import { asOrNull } from "../engine/TypeAssertion";
+import { CompilerOptions } from "compiler/CompilerOptions";
+import { DebugSourceRange } from "compiler/DebugSourceRange";
+import { ErrorType } from "compiler/Parser/ErrorType";
+import { InkParser } from "compiler/Parser/InkParser";
+import { Story } from "engine/Story";
+import { Story as ParsedStory } from "compiler/Parser/ParsedHierarchy/Story";
+import { DebugMetadata } from "engine/DebugMetadata";
+import { StringValue } from "engine/Value";
+import { asOrNull } from "engine/TypeAssertion";
 
-export { CompilerOptions } from "./CompilerOptions";
-export { InkParser } from "./Parser/InkParser";
-export { StatementLevel } from "./Parser/StatementLevel";
-export { JsonFileHandler } from "./FileHandler/JsonFileHandler";
-export { InkList, Story } from "../engine/Story";
+export { CompilerOptions } from "compiler/CompilerOptions";
+export { InkParser } from "compiler/Parser/InkParser";
+export { StatementLevel } from "compiler/Parser/StatementLevel";
+export { JsonFileHandler } from "compiler/FileHandler/JsonFileHandler";
+export { InkList, Story } from "engine/Story";
 
 export class Compiler {
   private _errors: string[] = [];

@@ -1,5 +1,3 @@
-// import { FlowBase } from './FlowBase';
-
 export function ClosestFlowBase(obj: any): any | null {
   let ancestor = obj.parent;
   while (ancestor) {

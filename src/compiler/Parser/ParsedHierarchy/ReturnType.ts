@@ -1,9 +1,9 @@
-import { Expression } from "./Expression/Expression";
-import { ParsedObject } from "./Object";
-import { Container as RuntimeContainer } from "../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../engine/ControlCommand";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
-import { Void } from "../../../engine/Void";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Void } from "engine/Void";
 
 export class ReturnType extends ParsedObject {
   public returnedExpression: Expression | null = null;

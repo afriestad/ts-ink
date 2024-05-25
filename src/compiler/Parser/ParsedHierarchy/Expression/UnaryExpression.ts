@@ -1,8 +1,8 @@
-import { Container as RuntimeContainer } from "../../../../engine/Container";
-import { Expression } from "./Expression";
-import { NativeFunctionCall } from "../../../../engine/NativeFunctionCall";
-import { NumberExpression } from "./NumberExpression";
-import { asOrNull } from "../../../../engine/TypeAssertion";
+import { Container as RuntimeContainer } from "engine/Container";
+import { Expression } from "compiler/Parser/ParsedHierarchy/Expression/Expression";
+import { NativeFunctionCall } from "engine/NativeFunctionCall";
+import { NumberExpression } from "compiler/Parser/ParsedHierarchy/Expression/NumberExpression";
+import { asOrNull } from "engine/TypeAssertion";
 
 export class UnaryExpression extends Expression {
   get nativeNameForOp(): string {

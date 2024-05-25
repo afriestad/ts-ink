@@ -1,14 +1,14 @@
-import { Container as RuntimeContainer } from "../../../engine/Container";
-import { ControlCommand as RuntimeControlCommand } from "../../../engine/ControlCommand";
-import { Divert } from "./Divert/Divert";
-import { Divert as RuntimeDivert } from "../../../engine/Divert";
-import { DivertTargetValue } from "../../../engine/Value";
-import { ParsedObject } from "./Object";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
-import { Story } from "./Story";
-import { Void } from "../../../engine/Void";
-import { asOrNull } from "../../../engine/TypeAssertion";
-import { VariableReference } from "../../../engine/VariableReference";
+import { Container as RuntimeContainer } from "engine/Container";
+import { ControlCommand as RuntimeControlCommand } from "engine/ControlCommand";
+import { Divert } from "compiler/Parser/ParsedHierarchy/Divert/Divert";
+import { Divert as RuntimeDivert } from "engine/Divert";
+import { DivertTargetValue } from "engine/Value";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
+import { Void } from "engine/Void";
+import { asOrNull } from "engine/TypeAssertion";
+import { VariableReference } from "engine/VariableReference";
 
 export class TunnelOnwards extends ParsedObject {
   private _overrideDivertTarget: DivertTargetValue | null = null;

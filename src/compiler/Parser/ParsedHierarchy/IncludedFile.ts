@@ -1,6 +1,6 @@
-import { ParsedObject } from "./Object";
-import { InkObject as RuntimeObject } from "../../../engine/Object";
-import { Story } from "./Story";
+import { ParsedObject } from "compiler/Parser/ParsedHierarchy/Object";
+import { InkObject as RuntimeObject } from "engine/Object";
+import { Story } from "compiler/Parser/ParsedHierarchy/Story";
 
 export class IncludedFile extends ParsedObject {
   constructor(public readonly includedStory: Story | null) {
