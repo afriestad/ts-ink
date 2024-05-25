@@ -1,12 +1,11 @@
-# ![inkjs](media/inkjs.png)
+![build](https://github.com/afriestad/ts-ink/workflows/Build/badge.svg)
+[![codecov](https://codecov.io/gh/afriestad/ts-ik/branch/main/graph/badge.svg)](https://codecov.io/gh/afriestad/ts-ink)
 
-![build](https://github.com/y-lohse/inkjs/workflows/Build/badge.svg)
-[![npm](https://img.shields.io/npm/v/inkjs.svg)](https://www.npmjs.com/package/inkjs)
-[![codecov](https://codecov.io/gh/y-lohse/inkjs/branch/master/graph/badge.svg)](https://codecov.io/gh/y-lohse/inkjs)
+This is a typescript/esm port of y-lohse's [inkjs](https://github.com/y-lohse/inkjs), which in turn is a js port of Inkle's [ink](https://github.com/inkle/ink), a scripting language for writing interactive narrative.
 
-This is a javascript port of inkle's [ink](https://github.com/inkle/ink), a scripting language for writing interactive narrative.
+ts-ink is fully compatible with the original version, has zero dependency and works in all browsers, ts-node and bun.
 
-inkjs is fully compatible with the original version, has zero dependency and works in all browsers and node.js. Please have a look at [the demo](http://yannick-lohse.fr/inkjs/)!
+**This repo is HEAVILY WIP and the below is likely to be very outdated or outright wrong**
 
 ## Table of content
 
