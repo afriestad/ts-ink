@@ -9,7 +9,6 @@ ts-ink is fully compatible with the original version, has zero dependency and wo
 
 ## Table of content
 
-- [](#)
 	- [Table of content](#table-of-content)
 	- [Installation](#installation)
 	- [Quickstart](#quickstart)
